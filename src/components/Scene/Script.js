@@ -189,25 +189,25 @@ export const removeOldModels = (route, group) => {
   loadModels(route, group);
 }
 
-const cubeForDebugging = new THREE.Mesh(
-  new THREE.BoxGeometry(.1, .1, .1),
-  new THREE.MeshBasicMaterial({ color: 0xff0000 })
-);
+// const cubeForDebugging = new THREE.Mesh(
+//   new THREE.BoxGeometry(.1, .1, .1),
+//   new THREE.MeshBasicMaterial({ color: 0xff0000 })
+// );
 
-scene.add(cubeForDebugging);
+// scene.add(cubeForDebugging);
 
-//Debug
-gui.add(cubeForDebugging.position, 'x', -10, 10, 0.01).name('Target X').onChange(() => {
-  orbitControls.target.x = cubeForDebugging.position.x;
-});
+// //Debug
+// gui.add(cubeForDebugging.position, 'x', -10, 10, 0.01).name('Target X').onChange(() => {
+//   orbitControls.target.x = cubeForDebugging.position.x;
+// });
 
-gui.add(cubeForDebugging.position, 'y', -10, 10, 0.01).name('Target Y').onChange(() => {
-  orbitControls.target.y = cubeForDebugging.position.y;
-})
+// gui.add(cubeForDebugging.position, 'y', -10, 10, 0.01).name('Target Y').onChange(() => {
+//   orbitControls.target.y = cubeForDebugging.position.y;
+// })
 
-gui.add(cubeForDebugging.position, 'z', -10, 10, 0.01).name('Target Z').onChange(() => {
-  orbitControls.target.z = cubeForDebugging.position.z;
-})
+// gui.add(cubeForDebugging.position, 'z', -10, 10, 0.01).name('Target Z').onChange(() => {
+//   orbitControls.target.z = cubeForDebugging.position.z;
+// })
 
 //camera
 
